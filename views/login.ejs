@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login page</title>
+    <link rel="stylesheet" href="/css/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-box">
+      <h1>Login</h1>
+      <form action="/event/log-in" method="post">
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" name="email"/>
+        <label>Password</label>
+        <input type="password" placeholder="enter password" name="password"/>
+        <button type="submit" value="Submit" class="submit">Login</button>
+      </form>
+    </div>
+    <p class="para-2">
+      Not have an account? <a href="/event/sign-up">Sign Up Here</a>
+    </p>
+  </body>
+</html>

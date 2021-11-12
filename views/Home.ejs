@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/home.css" rel="stylesheet">
+    <title>home</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>Hello thankyou for logging in if you want to  book an event enter below button</h1>
+    </div>
+    <button class="logout"> <a href="/event/logout">Log-Out</a></button>
+    <br>
+    <button class="btn"><a href="/event/eventform">Book event</a></button>
+    <br>
+    <br>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:30%;">Event Name</th>
+                    <th style="width:30%;">Organization</th>
+                    <th style="width:30%;">Category</th>
+                    <th style="width:30%;">Price Range</th>
+                    <th style="width:30%;">Start Date</th>
+                    <th style="width:30%;">End Date</th>
+                    <th style="width:30%;">Start Time</th>
+                    <th style="width:30%;">End Time</th>
+                    <th style="width:30%;">Subburb</th>
+                    <th style="width:30%;">Contact Name</th>
+                    <th style="width:30%;">Contact Number</th>
+                    <th style="width: 30%;">DELETE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% alluser.forEach(all =>{ %> 
+                <tr>
+                <td><%= all.eventname %> </td>
+                <td><%= all.organization %> </td>
+                <td><%= all.category %> </td>
+                <td><%= all.pricerange %> </td>
+                <td><%= all.startdate %> </td>
+                <td><%= all.enddate %> </td>
+                <td><%= all.starttime %> </td>
+                <td><%= all.endtime %> </td>
+                <td><%= all.subburb %> </td>
+                <td><%= all.contactname %> </td>
+                <td><%= all.contactnumber %> </td>
+                <td>
+                    <a href="/event/delete/<%=all._id%>" onclick="return confirm('Are You Sure You want to delete this record')"><i class='fa fa-times'></i></a>
+                    </td>
+                </tr>
+                <% }) %> 
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

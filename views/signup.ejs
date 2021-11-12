@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="/css/signup.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <h4>Please Register YourSelf</h4>
+      <form method="post" action="/event/sign-up">
+        <label>First Name</label>
+        <input type="text" placeholder="" name="firstname" />
+        <label>Last Name</label>
+        <input type="text" placeholder="" name="lastname"/>
+        <label>Email</label>
+        <input type="email" placeholder="" name="email"/>
+        <label>Password</label>
+        <input type="password" placeholder="" name="password"/>
+
+        <button type="submit" value="submit" class="submit">Submit</button>
+        <p class="para-2">
+          Already have an account? <a href="/event/log-in">Login here</a>
+        </p>
+      </form>
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+.heading{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: aquamarine;
+}
+.btn{
+    background-color: #4CAF50; /* Green */
+    border: 2px solid  greenyellow;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 45%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+  }
+  .btn a{
+      text-decoration: none;
+      color: white;
+  }
+  .btn:hover{
+      cursor: pointer;
+      color: black;
+      background-color: #38823b;
+
+  }
+  .container{
+    margin: 1rem 16rem;
+}
+table,th,td{
+    border:1px solid black;
+}
+.btn:hover{
+    cursor: pointer;
+}
+table td, table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+
+}
+
+.logout{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 90%;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  .logout a{
+      text-decoration: none;
+      color: white;
+  }
+  .logout:hover{
+      cursor: pointer;
+
+  }
